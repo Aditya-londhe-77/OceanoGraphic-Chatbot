@@ -1,0 +1,87 @@
+[
+    {
+        "timestamp": "2025-09-29T23:28:50.188410",
+        "user_message": "hi",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-29T23:28:55.692375",
+        "user_message": "hello",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-29T23:29:00.667900",
+        "user_message": "hello",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-29T23:37:29.116192",
+        "user_message": "hi",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-29T23:37:36.879129",
+        "user_message": "hello",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-29T23:44:47.075918",
+        "user_message": "hi",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-29T23:44:56.193108",
+        "user_message": "hello",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-29T23:48:33.186624",
+        "user_message": "hi",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-29T23:48:38.407814",
+        "user_message": "hi",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-30T00:03:41.536507",
+        "user_message": "hello",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-30T00:03:53.008589",
+        "user_message": "hey",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-30T00:04:27.479041",
+        "user_message": "hwy",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-30T00:04:38.441627",
+        "user_message": "hello",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-30T00:13:51.175320",
+        "user_message": "hi",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-30T00:24:16.158882",
+        "user_message": "hello",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-30T00:24:26.276464",
+        "user_message": "what are you doing",
+        "ai_response": "Hello there! I'm your guide to the world's oceans. You can ask me about water temperatures, salinity levels, or the locations of our amazing research floats. What would you like to discover today?"
+    },
+    {
+        "timestamp": "2025-09-30T11:29:42.923873",
+        "user_message": "what is the maximum temmperature of this float",
+        "ai_response": "The maximum temperature reading of this float is 30.297 degrees.\n\nData I found:\n<pre>|    max |\n|-------:|\n| 30.297 |</pre>"
+    }
+]

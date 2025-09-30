@@ -1,0 +1,275 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #1e293b;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+.container {
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  padding: 12px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 130px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f1f5f9;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+/* ========== HERO SECTION ========== */
+.explore-hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.explore-hero h1 {
+  font-size: 2.8em;
+  color: #38bdf8;
+  margin-bottom: 16px;
+}
+
+.explore-hero p {
+  font-size: 1.1em;
+  color: #cbd5e1;
+}
+
+/* ========== EXPLORE INFO CARDS ========== */
+.explore-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.info-card {
+  background: #334155;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  background-color: #475569;
+}
+
+.info-card h2 {
+  font-size: 1.4em;
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+.info-card p {
+  color: #cbd5e1;
+}
+
+/* ========== FACTS SECTION ========== */
+.facts-section {
+  margin: 60px 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.facts-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  color: #38bdf8;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.fact-box {
+  background: #475569;
+  padding: 20px;
+  border-radius: 10px;
+  color: #f1f5f9;
+  font-size: 1em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.fact-box:hover {
+  transform: translateY(-5px);
+  background: #64748b;
+}
+
+/* ========== QUIZ PREVIEW ========== */
+.quiz-preview {
+  text-align: center;
+  margin: 60px 0;
+  padding: 0 20px;
+}
+
+.quiz-preview h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.quiz-preview p {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.quiz-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.quiz-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ========== STATISTICS SECTION ========== */
+.stats-section {
+  padding: 60px 20px;
+  background: #0f172a;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+.stats-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 35px;
+  color: #38bdf8;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.stat-card h3 {
+  font-size: 2.5em;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #cbd5e1;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+/* ========== CALL TO ACTION ========== */
+.cta-section {
+  text-align: center;
+  margin: 60px 20px;
+  padding: 40px;
+  background: #334155;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cta-section h2 {
+  font-size: 2em;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.1em;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .explore-hero h1 {
+    font-size: 2.2em;
+  }
+
+  .quiz-btn,
+  .cta-btn {
+    width: 100%;
+  }
+
+  .stats-section,
+  .cta-section {
+    padding: 30px 20px;
+  }
+}

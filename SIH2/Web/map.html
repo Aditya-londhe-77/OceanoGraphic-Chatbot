@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Indian Ocean Floats</title>
+  <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    /* ========== GLOBAL STYLES ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #1e293b;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    /* ========== MAP ========== */
+    #map {
+      width: 100%;
+      height: 100vh;
+      border: 2px solid #475569;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([15, 80], 5);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(map);
+
+    const oceanFloats = [
+      { name: "Gujarat Coast Float", coords: [21.0, 67.5] },
+      { name: "Konkan Coast Float", coords: [16.5, 71.5] },
+      { name: "Malabar Coast Float", coords: [9.0, 74.5] },
+      { name: "Coromandel Coast Float", coords: [15.0, 83.5] },
+      { name: "Andaman Sea Float", coords: [12.0, 94.0] }
+    ];
+
+    oceanFloats.forEach(float => {
+      const outerCircle = L.circle(float.coords, {
+        radius: 200000,
+        color: '#3498db',
+        fillColor: '#3498db',
+        fillOpacity: 0.15,
+        weight: 1
+      }).addTo(map);
+
+      const innerPoint = L.circleMarker(float.coords, {
+        radius: 10,
+        color: '#ffffff',
+        weight: 2,
+        fillColor: '#2980b9',
+        fillOpacity: 1
+      }).addTo(map);
+
+      innerPoint.bindPopup(`<b>${float.name}</b>`);
+      
+      innerPoint.on('click', () => {
+        map.flyTo(float.coords, 7);
+      });
+    });
+  </script>
+</body>
+</html>

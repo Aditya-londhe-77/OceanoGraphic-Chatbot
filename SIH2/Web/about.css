@@ -1,0 +1,156 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #1e293b;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  padding: 12px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 130px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f1f5f9;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #cbd5e1;
+}
+
+/* ========== COMPANY STORY ========== */
+.company-story {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.company-story h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.company-story p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #d1d5db;
+}
+
+/* ========== MISSION & VISION ========== */
+.mission-vision {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 20px;
+  background: #334155;
+  flex-wrap: wrap;
+}
+
+.mission, .vision {
+  max-width: 400px;
+  text-align: center;
+}
+
+.mission h3, .vision h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* ========== TEAM SECTION ========== */
+.team {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.team h2 {
+  color: #38bdf8;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.member {
+  max-width: 200px;
+}
+
+.member img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.member h4 {
+  margin-bottom: 5px;
+  color: #f1f5f9;
+}
+
+.member p {
+  color: #cbd5e1;
+  font-size: 0.95em;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #0f172a;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  color: #f1f5f9;
+}

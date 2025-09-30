@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStack - FloatChat Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="wave-container">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <div class="logo">
+      <img src="TeckStack Logo.png" alt="TechStack Logo">
+    </div>
+    <nav>
+      <a href="about.html">About us</a>
+      <a href="explore.html">Explore</a>
+      <a href="#">Colocation</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <div class="top-bar">
+        <div class="search-wrapper">
+          <input type="text" id="location-search" placeholder="Search ocean points...">
+          <ul id="suggestions" class="suggestions-list"></ul>
+        </div>
+
+        <button id="floatchat-btn" class="floatchat-card">
+          <img src="FloatChat Logo.jpg" alt="FloatChat">
+          <div>
+            <strong>FloatChat</strong>
+            <p>Dive Into Ocean Insights</p>
+          </div>
+        </button>
+      </div>
+
+      <div id="mapid" class="map-container"></div>
+
+      <!-- New "Follow a Float's Journey" Section -->
+      <div class="journey-section">
+        <h2>Follow a Float's Journey</h2>
+        <p class="section-subtitle">Scroll down to see how a single ARGO float travels the ocean and what it discovers.</p>
+        
+        <div class="journey-timeline">
+          <div class="journey-visual">
+            <div class="visual-content-animated">
+              <canvas id="oceanCanvas"></canvas>
+              <div class="sonar-emitter">
+                <div class="sonar-wave"></div>
+              </div>
+              <h4>Float #2903829</h4>
+              <p>Indian Ocean</p>
+            </div>
+          </div>
+
+          <div class="journey-steps">
+            <div class="step">
+              <h3>Deployment</h3>
+              <p>Our journey begins in the central Indian Ocean. The float is deployed and begins its mission, descending into the depths for the first time.</p>
+            </div>
+            <div class="step">
+              <h3>First Data Transmission</h3>
+              <p>After reaching a depth of 2,000 meters, the float surfaces and transmits its first package of data—revealing a water temperature of 4°C and a salinity of 34.7 PSU.</p>
+            </div>
+            <div class="step">
+              <h3>Navigating the Currents</h3>
+              <p>Carried by the powerful Indian Ocean gyre, the float drifts hundreds of kilometers to the east, continuously collecting data on its silent journey.</p>
+            </div>
+            <div class="step">
+              <h3>Surprising Discovery</h3>
+              <p>Months later, the float detects a sudden drop in salinity, indicating a large influx of freshwater, likely from a distant tropical storm. This is a key insight for climate modeling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Project Overview Section -->
+      <div class="creative-features">
+        <h2>From Deep Ocean to Your Screen</h2>
+        <p class="section-subtitle">Making the world's ocean data understandable for everyone.</p>
+        <div class="feature-timeline">
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79a9 9 0 1 1-11.21-1.21 7 7 0 0 0 7.79 7.79 7 7 0 0 0 4.62-1.21Z"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+            <h3>1. Explore the Unseen</h3>
+            <p>Thousands of robotic ARGO floats drift through the oceans, collecting a constant stream of vital data about temperature, salinity, and ocean health. This information is crucial, but it's raw, complex, and hidden in technical files.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="8" y="8" width="8" height="12" rx="2"/><path d="M4 12a8 8 0 0 1 8-8h0"/><path d="M16 12a8 8 0 0 1-8 8h0"/></svg>
+            </div>
+            <h3>2. AI as Your Translator</h3>
+            <p>Our project takes this complicated data and uses advanced AI to make sense of it. FloatChat acts as your personal oceanographer, translating the numbers and code into clear, simple answers you can understand.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>3. Your Ocean, Your Questions</h3>
+            <p>Now, you can ask the questions that matter to you. Instead of complex tools, you can simply chat. Ask things like, "How warm is the Arabian Sea this month?" or "Show me the path of a float near Australia." Get instant, visual answers.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <div id="glass-surface-container" class="glass-surface">
+      <svg class="glass-surface__filter" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+              <filter id="glass-filter" color-interpolation-filters="sRGB" x="0%" y="0%" width="100%" height="100%">
+                  <feImage id="feImage" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="map" />
+                  <feDisplacementMap id="redChannel" in="SourceGraphic" in2="map" result="dispRed" />
+                  <feColorMatrix in="dispRed" type="matrix" values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" result="red" />
+                  <feDisplacementMap id="greenChannel" in="SourceGraphic" in2="map" result="dispGreen" />
+                  <feColorMatrix in="dispGreen" type="matrix" values="0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0" result="green" />
+                  <feDisplacementMap id="blueChannel" in="SourceGraphic" in2="map" result="dispBlue" />
+                  <feColorMatrix in="dispBlue" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0" result="blue" />
+                  <feBlend in="red" in2="green" mode="screen" result="rg" />
+                  <feBlend in="rg" in2="blue" mode="screen" result="output" />
+                  <feGaussianBlur id="gaussianBlur" in="output" stdDeviation="0.7" />
+              </filter>
+          </defs>
+      </svg>
+      <div class="glass-surface__content">
+          <div id="chatbox" class="chatbox">
+              <div class="chatbox-header">
+                  <div class="chatbox-title">
+                      <img src="FloatChat Logo.jpg" alt="FloatChat Logo" class="header-logo">
+                      <span>FloatChat</span>
+                  </div>
+                  <button id="close-chat">✖</button>
+              </div>
+              <div class="chatbox-messages" id="chatbox-messages">
+                  <div class="bot-message">Hi! I can help you explore oceans. Try searching!</div>
+              </div>
+              <div class="chatbox-input">
+                  <input type="text" id="chat-input" placeholder="Type a message..." />
+                  <button id="send-btn" type="button">Send</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
