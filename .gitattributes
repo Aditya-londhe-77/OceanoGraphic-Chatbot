@@ -1,1 +1,2 @@
 *.csv filter=lfs diff=lfs merge=lfs -text
+SIH2/ChatBot/CsvData/MetaData.csv filter=lfs diff=lfs merge=lfs -text
